@@ -65,11 +65,11 @@ function getParagraph(){
 				time = time1;
 				break;
 			case "Half marathon":
-				distance = "Teo pusmaratonis";
+				distance = "Pusmaratonis";
 				time = time2;
 				break;
 			case "10 km":
-				distance = "Magne B6. 10 km bėgimas";
+				distance = "Švyturio Baltas nealkoholinis 10km bėgimas";
 				time = time3;
 				break;
 			case "4.2 km":
