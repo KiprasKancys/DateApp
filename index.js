@@ -96,7 +96,7 @@ function getParagraph(){
 				break;
 		};
 		
-		switch(time) {
+		switch(gender) {
 			case "M":
 				gender = "Vyras";
 				break;
@@ -104,9 +104,6 @@ function getParagraph(){
 				gender = "Moteris";
 				break;
 		};
-		
-		
-		
 		
 		var temp = date.split("/");
 		var today = new Date();
