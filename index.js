@@ -65,7 +65,7 @@ function getParagraph(){
 				time = time1;
 				break;
 			case "Half marathon":
-				distance = "Pusmaratonis";
+				distance = "„RIMI Pusmaratonis“";
 				time = time2;
 				break;
 			case "10 km":
