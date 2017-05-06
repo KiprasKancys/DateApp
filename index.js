@@ -69,7 +69,7 @@ function getParagraph(){
 				time = time2;
 				break;
 			case "10 km":
-				distance = "Švyturio Baltas nealkoholinis 10km bėgimas";
+				distance = "10km bėgimas";
 				time = time3;
 				break;
 			case "4.2 km":
