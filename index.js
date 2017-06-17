@@ -8,10 +8,33 @@ function begin(){
 function convertDateFun(){
 	var temp = document.getElementById("date").value;
 	var para = document.getElementById("para").value;
-	if (para == "") {
-		convertDate(temp);
-	} else {
+	var temp2 = document.getElementById("date2").value;
+	if (temp == "" & para == "") {
+		convertDate2(temp2);
+	} else if (temp == "" & temp2 == "") {
 		getParagraph();
+	} else if (temp2 == "" & para == "") {
+		convertDate(temp);
+	}
+}
+
+function convertDate(ddate){
+	var temp = ddate.split("-");
+	var today = new Date();
+	var yyyy = today.getFullYear();
+	var day = temp[0];
+	var month = temp[1];
+	var year = temp[2];
+	if (day > 0 && day < 32 && month > 0 && month < 13 && year > 1900 && year < yyyy){
+		document.getElementById('reply2').value = year + "-" + month + "-" + day;
+		if (year > yyyy-18){
+			document.getElementById('comment2').innerHTML = "Age under 18";
+		} else {
+			document.getElementById('comment2').innerHTML = "";
+		}
+	} else {
+		document.getElementById('reply2').value = "";
+		document.getElementById('comment2').innerHTML = "Input is not a date";
 	}
 }
 
