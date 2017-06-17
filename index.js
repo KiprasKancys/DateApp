@@ -18,23 +18,23 @@ function convertDateFun(){
 	}
 }
 
-function convertDate(ddate){
+function convertDate2(ddate){
 	var temp = ddate.split("-");
 	var today = new Date();
 	var yyyy = today.getFullYear();
-	var day = temp[0];
+	var day = temp[2];
 	var month = temp[1];
-	var year = temp[2];
+	var year = temp[0];
 	if (day > 0 && day < 32 && month > 0 && month < 13 && year > 1900 && year < yyyy){
-		document.getElementById('reply2').value = year + "-" + month + "-" + day;
+		document.getElementById('reply3').value = year + "-" + month + "-" + day;
 		if (year > yyyy-18){
-			document.getElementById('comment2').innerHTML = "Age under 18";
+			document.getElementById('comment').innerHTML = "Age under 18";
 		} else {
-			document.getElementById('comment2').innerHTML = "";
+			document.getElementById('comment').innerHTML = "";
 		}
 	} else {
-		document.getElementById('reply2').value = "";
-		document.getElementById('comment2').innerHTML = "Input is not a date";
+		document.getElementById('reply3').value = "";
+		document.getElementById('comment').innerHTML = "Input is not a date";
 	}
 }
 
